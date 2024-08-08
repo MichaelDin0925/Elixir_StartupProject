@@ -1,0 +1,405 @@
+/* This file is for your main application CSS */
+@import "./phoenix.css";
+
+/* Alerts and form errors used by phx.new */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.alert p {
+  margin-bottom: 0;
+}
+
+.alert:empty {
+  display: none;
+}
+
+.invalid-feedback {
+  color: #a94442;
+  display: block;
+  margin: -1rem 0 2rem;
+}
+
+/* LiveView specific classes for your customization */
+.phx-no-feedback.invalid-feedback,
+.phx-no-feedback .invalid-feedback {
+  display: none;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+
+.container1 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #dae0ee;
+  padding: 0 2.0rem;
+}
+
+.sign-in-title {
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #ccc;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  color: #28a745;
+  font-family: serif;
+}
+
+.social-title {
+  float: left;
+  color: #666;
+  font-weight: 500;
+  padding: 0 0 1rem;
+  font-size: 14px;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #ccc;
+}
+
+.social-button {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-group-icon {
+  padding: 0 1rem;
+}
+
+.phx-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7f7f7;
+}
+
+/* Style the form container */
+.sign-up-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  float: right;
+}
+
+/* Style the social buttons */
+.sign-up-form div>button {
+  width: 48%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 2%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sign-up-form button:nth-child(1) {
+  background-color: #1DA1F2;
+  /* Twitter blue */
+}
+
+.sign-up-form button:nth-child(2) {
+  background-color: #3b5998;
+  /* Facebook blue */
+  margin-right: 0;
+}
+
+/* Style the form */
+#signup-form {
+  margin-top: 1.5rem;
+}
+
+/* Style the form groups */
+.form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+}
+
+.form-control {
+  flex: 1;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #666;
+
+}
+
+/* Style the form labels */
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the form inputs */
+.form-group input {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border: none;
+  border-radius: 0px;
+  font-size: 1rem;
+  color: #666;
+  margin: 0px;
+  border-left: solid 1px #ccc;
+}
+
+.form-group input::placeholder {
+  color: #ccc;
+}
+
+/* Add icons to inputs */
+.form-group i {
+  /* position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #ccc; */
+  color: #ccc;
+}
+
+/* Style the checkbox and its label */
+.form-group.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group.d-flex .d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.form-group.d-flex .d-flex input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-group.d-flex .d-flex label {
+  font-size: 0.9rem;
+}
+
+/* Style the submit button */
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  /* green */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+}
+
+/* Style the footer links */
+.sign-up-form footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.sign-up-form footer p {
+  font-size: 14px;
+  font-family: serif;
+  color: #666
+}
+.form-container {
+  display: none;
+}
+
+.form-container.active {
+  display: block;
+}
+
+.sign-up-form footer a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.sign-up-form footer a:hover {
+  text-decoration: underline;
+}
+
+.keep-title {
+  font-size: 13px;
+  padding-left: 5px;
+  color: #666;
+}
+
+#keep-signed-in {
+  align-items: center;
+  display: flex;
+  margin: 0 0 1rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.sign-in-btn {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.phx-click-loading {
+  opacity: 0.5;
+  transition: opacity 1s ease-out;
+}
+
+.phx-loading {
+  cursor: wait;
+}
+
+.phx-modal {
+  opacity: 1 !important;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.phx-modal-content {
+  background-color: #fefefe;
+  margin: 15vh auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.phx-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.phx-modal-close:hover,
+.phx-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fade-in-scale {
+  animation: 0.2s ease-in 0s normal forwards 1 fade-in-scale-keys;
+}
+
+.fade-out-scale {
+  animation: 0.2s ease-out 0s normal forwards 1 fade-out-scale-keys;
+}
+
+.fade-in {
+  animation: 0.2s ease-out 0s normal forwards 1 fade-in-keys;
+}
+
+.fade-out {
+  animation: 0.2s ease-out 0s normal forwards 1 fade-out-keys;
+}
+
+@keyframes fade-in-scale-keys {
+  0% {
+    scale: 0.95;
+    opacity: 0;
+  }
+
+  100% {
+    scale: 1.0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-scale-keys {
+  0% {
+    scale: 1.0;
+    opacity: 1;
+  }
+
+  100% {
+    scale: 0.95;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-keys {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-keys {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
